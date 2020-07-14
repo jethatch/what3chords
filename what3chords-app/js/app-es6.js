@@ -254,14 +254,25 @@ function setTooltip(object, x, y, c) {
 }
 
 function getChordTableRow(c) {
+  var j = [1, 2, 3, 4, 5, 6]
+  var d = j.map(function(e, i) {
+    return [e, c.frets[i]];
+  });
+  // var chart = new svguitar.SVGuitarChord('#tooltip')
+
   return `<tr>
   <td>${c.chord}</td>
   <td>${c.frets}</td>
   <td>${c.capo}</td>
   <td>${c.fingers}</td>
+  <td>${d}</td>
   </tr>`;
 }
 
+// was above, wasn't working, moved here for a sec
+// ${chart.chord({
+//  fingers: d
+//  }).draw()}
 
 function isValidH3Code(bits) {
   // returns false if provided bits are an invalid h3 code, true otherwise
