@@ -269,11 +269,11 @@ function drawChord(c, d) {
     return [e, c.frets[i]];
   })
 
-  new SVGuitarChord(d)
+  new svguitar.SVGuitarChord(d)
     .chord({
       fingers: x,
       barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
-      
+
     })
     .configure({
       style: 'handdrawn'
