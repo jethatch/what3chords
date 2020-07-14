@@ -258,6 +258,7 @@ function getChordTableRow(c) {
   var d = j.map(function(e, i) {
     return [e, c.frets[i]];
   });
+  console.log(d)
   // var chart = new svguitar.SVGuitarChord('#tooltip')
 
   return `<tr>
