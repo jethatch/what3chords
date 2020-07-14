@@ -275,7 +275,7 @@ function drawChord(c, d) {
       title: c.chord
     }).chord({
       fingers: [x]
-      barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
+      // barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
 
     }).draw();
 }
