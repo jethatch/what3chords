@@ -263,11 +263,11 @@ function setTooltip(object, x, y, c) {
 // itshappening.gif
 function drawChord(c, d) {
   // s for strings
-  var s = [1, 2, 3, 4, 5, 6]
+  var s = [1, 2, 3, 4, 5, 6];
   // x should be a [string, fret] set
   var x = s.map(function(e, i) {
     return [e, c.frets[i]];
-  })
+  });
 
   var chart = new svguitar.SVGuitarChord(d)
     chart.configure({
