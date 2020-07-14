@@ -270,15 +270,14 @@ function drawChord(c, d) {
   })
 
   var chart = new svguitar.SVGuitarChord(d)
-    chart.chord({
+    chart.configure({
+      style: 'handdrawn',
+      title: c.chord
+    }).chord({
       fingers: [x]
-      // barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
+      barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
 
-    })
-    // .configure({
-    //  style: 'handdrawn'
-    // })
-    .draw();
+    }).draw();
 }
 
 function getChordTableRow(c) {
