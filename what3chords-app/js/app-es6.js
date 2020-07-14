@@ -271,7 +271,7 @@ function drawChord(c, d) {
 
   var chart = new svguitar.SVGuitarChord(d)
     chart.chord({
-      fingers: x,
+      fingers: [x],
       barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
 
     })
