@@ -268,9 +268,9 @@ function drawChord(c, d) {
   var x = s.map(function(e, i) {
     return [e, c.frets[i]];
   });
-  console.log(x)
-  var chart = new svguitar.SVGuitarChord(d)
-    chart.configure({
+
+  var chart = new svguitar.SVGuitarChord(d);
+  chart.configure({
       style: 'handdrawn',
       title: c.chord
     }).chord({
