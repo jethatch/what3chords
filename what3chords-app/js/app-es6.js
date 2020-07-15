@@ -239,10 +239,10 @@ function setTooltip(object, x, y, c) {
     //   ${getChordTableRow(CHORDS[codeToUse[2]])}
     //   <tr><td>H3</td><td colspan="3">${h3.geoToH3(c[1], c[0], H3_RES)}</td></tr>
     //   </table>`;
-    // el.style.left = `${x}px`;
-    // el.style.top = `${y}px`;
-    // el.style.visibility = "visible";
-    // el.style.display = "block";
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
+    el.style.visibility = "visible";
+    el.style.display = "block";
 
     // yes, this should be one call and not manually take parameters and... punkrock
 
@@ -275,7 +275,7 @@ function drawChord(c, d) {
       title: c.chord
     }).chord({
       fingers: x
-      barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
+      // barres: [ {fromString: 6, toString: 1, fret: c.capo, text: c.capo}]
 
     }).draw();
 }
